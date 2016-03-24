@@ -1,2 +1,8 @@
 import pygame
 import random
+
+# setting up the board
+windowwidth=650
+windowheight=500
+boxsize=40
+gapsize=10
