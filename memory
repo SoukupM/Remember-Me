@@ -6,3 +6,5 @@ windowwidth=650
 windowheight=500
 boxsize=40
 gapsize=10
+boardwidth=4
+boardheight=4
