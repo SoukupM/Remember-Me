@@ -1,5 +1,4 @@
-import random
-import pygame, sys
+import random, pygame, sys
 from pygame.locals import*
 
 pygame.init() #initialize pygame and game board
