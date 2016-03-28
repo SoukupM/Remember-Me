@@ -5,6 +5,16 @@ pygame.init() #initialize pygame and game board
 displaysurf = pygame.display.set_mode((400,300))
 pygame.display.set_caption('Hello World!')
 
+#setting up colors
+blue = (0,0,255) 
+red = (255,0,0)
+yellow = (255,255,0)
+black = (0,0,0)
+green = (0,128,0)
+purple = (128,0,128)
+gray = (128,128,128)
+teal = (0,128,128)
+
 while True: #main game loop
 	for event in pygame.event.get(): 
 		if event.type==QUIT: #quits game if quit event type
@@ -12,10 +22,3 @@ while True: #main game loop
 			sys.exit()
 	pygame.display.update() #writes gamestate to board 
 	
-# setting up the board
-windowwidth=650
-windowheight=500
-boxsize=40
-gapsize=10
-boardwidth=4
-boardheight=4
