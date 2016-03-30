@@ -6,14 +6,14 @@ displaysurf = pygame.display.set_mode((400,300))
 pygame.display.set_caption('Hello World!')
 
 #setting up colors
-blue = (0,0,255) 
-red = (255,0,0)
-yellow = (255,255,0)
-black = (0,0,0)
-green = (0,128,0)
-purple = (128,0,128)
-gray = (128,128,128)
-teal = (0,128,128)
+BLUE = (0,0,255) 
+RED = (255,0,0)
+YELLOW = (255,255,0)
+BLACK = (0,0,0)
+GREEN = (0,128,0)
+PURPLE = (128,0,128)
+GRAY = (128,128,128)
+TEAL = (0,128,128)
 
 def main():
 	while True: #main game loop
