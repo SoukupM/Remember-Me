@@ -2,8 +2,14 @@ import random, pygame, sys
 from pygame.locals import*
 
 pygame.init() #initialize pygame and game board
-displaysurf = pygame.display.set_mode((400,300))
-pygame.display.set_caption('Hello World!')
+pygame.display.set_caption('Memory Game')
+WINDOWWIDTH = 500
+WINDOWHEIGHT = 500
+CARDSIZE = 50
+GAPSIZE = 10 
+BOARDWIDTH = 8
+BOARDHEIGHT = 8
+MARGIN = int((WINDOWWIDTH - (BOARDWIDTH*(CARDSIZE + GAPSIZE)))/2)
 
 #setting up colors
 BLUE = (0,0,255) 
