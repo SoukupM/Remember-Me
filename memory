@@ -1,8 +1,6 @@
 import random, pygame, sys
 from pygame.locals import*
 
-pygame.init() #initialize pygame and game board
-pygame.display.set_caption('Memory Game')
 WINDOWWIDTH = 500
 WINDOWHEIGHT = 500
 CARDSIZE = 50
@@ -20,8 +18,17 @@ GREEN = (0,128,0)
 PURPLE = (128,0,128)
 GRAY = (128,128,128)
 TEAL = (0,128,128)
+COLORS = (BLUE, RED, YELLOW, BLACK, GREEN, PURPLE, GRAY, TEAL)
+
+pygame.init() #initialize pygame and game board
+pygame.display.set_caption('Memory Game')
+FPS = 30
+FPSCLOCK = pygame.time.Clock()
+DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
 
 def main():
+	mousex = 0
+	mousey = 0
 	while True: #main game loop
 		for event in pygame.event.get(): 
 			if event.type==QUIT: #quits game if quit event type
