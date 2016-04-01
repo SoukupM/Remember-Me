@@ -18,6 +18,7 @@ GREEN = (0,128,0)
 PURPLE = (128,0,128)
 GRAY = (128,128,128)
 TEAL = (0,128,128)
+BGCOLOR = (60,60,100)
 COLORS = (BLUE, RED, YELLOW, BLACK, GREEN, PURPLE, GRAY, TEAL)
 
 pygame.init() #initialize pygame and game board
@@ -29,6 +30,9 @@ DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
 def main():
 	mousex = 0
 	mousey = 0
+	mainBoard = getRandomizedBoard()
+	revealedBoxes = generateRevealedBoxesData(False)
+	firstSelection = None
 	while True: #main game loop
 		for event in pygame.event.get(): 
 			if event.type==QUIT: #quits game if quit event type
