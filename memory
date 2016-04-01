@@ -32,8 +32,13 @@ def main():
 	mousey = 0
 	mainBoard = getRandomizedBoard()
 	revealedBoxes = generateRevealedBoxesData(False)
-	firstSelection = None
+	firstSelection = None 
+	DISPLAYSURF.fill(BGCOLOR)
+	startGameAnimation(mainBoard)
 	while True: #main game loop
+		mouseClicked = False
+		DISPLAYSURF.fill(BGCOLOR)
+		drawBoard(mainBoard, revealedBoxes)
 		for event in pygame.event.get(): 
 			if event.type==QUIT: #quits game if quit event type
 				pygame.quit()
