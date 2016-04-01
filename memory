@@ -45,3 +45,9 @@ def main():
 				sys.exit()
 		pygame.display.update() #writes gamestate to board 
 	
+def getRandomizedBoard():
+	icons = []
+	for color in COLORS:
+		icons.append(color)
+	random.shuffle(icons)
+	
